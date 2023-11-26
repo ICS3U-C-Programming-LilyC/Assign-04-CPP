@@ -17,7 +17,7 @@ int main() {
     // Initiating variable for user input.
     std::string numberAsString;
 
-    // Getting user number as as string.
+    // Getting user number as string.
     std::cout << "Please enter an integer of your choice: ";
     std::cin >> numberAsString;
 
@@ -30,22 +30,19 @@ int main() {
         // Converting user's input variable
         // from a string to an integer.
         int numberAsInteger = std::stoi(numberAsString);
-        // If statement to verify that the number
-        // entered by the user is between the
-        // range 20 and 100.
 
         // If statement to not allow for decimal input.
         if (numberAsFloat != numberAsInteger) {
             std::cout << numberAsFloat << " is an invalid input.";
+
         // Else if checking to see if the user's
         // input is within the range 20 to 100.
         } else if (numberAsInteger >= 20 && numberAsInteger <= 100) {
                 // First for loop which will increment
                 // counter1 (first number displayed).
-
                 for (int counter1 = 10; counter1 <= 100; counter1++) {
                     // Second for loop (nested loop) which will
-                    // increment counter2 (second number displayed).
+                    // decrement counter2 (second number displayed).
                     for (int counter2 = numberAsInteger - counter1;
                          counter2 >= 10; counter2--) {
                         // If statement to see if both counter's
